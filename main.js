@@ -4,8 +4,8 @@ const $btnFireBlast = document.getElementById('btn-fire-blast');
 const character = createPokemon('Pikachu', 'health-character', 'progressbar-character');
 const enemy = createPokemon('Charmander', 'health-enemy', 'progressbar-enemy');
 
-$btnKick.addEventListener('click', () => character.handleAttack('Thunder Jolt', random(20)));
-$btnFireBlast.addEventListener('click', () => enemy.handleAttack('Fire Blast', random(30)));
+$btnKick.addEventListener('click', () => enemy.handleAttack('Thunder Jolt', random(20)));
+$btnFireBlast.addEventListener('click', () => character.handleAttack('Fire Blast', random(30)));
 
 function createPokemon(name, healthId, progressbarId) {
     const elHP = document.getElementById(healthId);
